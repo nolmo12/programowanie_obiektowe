@@ -9,3 +9,15 @@ def replaceBiggerNeighbour(list):
 
 lista=[1,2,4,5,2]
 print(replaceBiggerNeighbour(lista))
+#zad 9 podpunkt e
+def moveParzysteToTheFront(list):
+    pom=[]
+    for x in range(0, len(list), 1):
+        if(list[x]%2==0):
+            pom.append(list[x])
+    for y in range(0, len(list), 1):
+        if(list[y]%2!=0):
+            pom.append(list[y])
+    return pom
+lista=[1,2,4,5,2]
+print(moveParzysteToTheFront(lista))
