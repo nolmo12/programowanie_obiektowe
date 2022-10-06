@@ -8,6 +8,17 @@ def replaceBiggerNeighbour(list):
     return list
 
 lista=[1,2,4,5,2]
+#zad 9 podpunkt e
+def removeElements(list):
+    pom=int((len(list)-1)/2)
+    if(len(list)%2==0):
+        list.pop(pom)
+        list.pop(pom)
+    else:
+        list.pop(pom)
+    return list
+lista=[1,2,4,5,2,6]
+print(removeElements(lista))
 print(replaceBiggerNeighbour(lista))
 #zad 9 podpunkt f
 def moveParzysteToTheFront(list):
