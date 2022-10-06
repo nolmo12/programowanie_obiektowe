@@ -9,7 +9,7 @@ def replaceBiggerNeighbour(list):
 
 lista=[1,2,4,5,2]
 print(replaceBiggerNeighbour(lista))
-#zad 9 podpunkt e
+#zad 9 podpunkt f
 def moveParzysteToTheFront(list):
     pom=[]
     for x in range(0, len(list), 1):
@@ -21,3 +21,13 @@ def moveParzysteToTheFront(list):
     return pom
 lista=[1,2,4,5,2]
 print(moveParzysteToTheFront(lista))
+#zad 9 podpunkt g
+def drugiNajwiekszy(list):
+    pom=[list[0], list[0]]
+    for x in list:
+        if(x>pom[0]):
+            pom[1]=pom[0]
+            pom[0]=x
+    return pom[1]
+lista=[1,2,4,5,2]
+print(drugiNajwiekszy(lista))
