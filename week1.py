@@ -51,10 +51,19 @@ def isSorted(list):
 lista=[1,2,3,3,2,4,5]
 print(isSorted(lista))
 #zad 9 podpunkt i
-def isSorted(list):
+def isNeighbourEqual(list):
     for x in range(0,len(list)-1,1):
         if(list[x]==list[x+1]):
             return True
     return False
 lista=[1,2,3,2,3,2,4,5]
+print(isSorted(lista))
+#zad  9 podpunkt j
+def isSorted(list):
+    for x in range(0,len(list)-1,1):
+        for y in range(x+1, len(list)-1, 1):
+            if(list[x]==list[y]):
+                return True
+    return False
+lista=[1,2,2,4,5]
 print(isSorted(lista))
