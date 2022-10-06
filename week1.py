@@ -42,3 +42,11 @@ def drugiNajwiekszy(list):
     return pom[1]
 lista=[1,2,4,5,2]
 print(drugiNajwiekszy(lista))
+#zad 9 podpunkt h
+def isSorted(list):
+    for x in range(0,len(list)-1,1):
+        if(list[x]>list[x+1]):
+            return False
+    return True
+lista=[1,2,3,3,2,4,5]
+print(isSorted(lista))
