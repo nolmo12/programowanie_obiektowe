@@ -67,3 +67,15 @@ def isSorted(list):
     return False
 lista=[1,2,2,4,5]
 print(isSorted(lista))
+#zad 10
+def equals(a,b):
+    if(len(a)==len(b)):
+        for x in range(0, len(a), 1):
+            if(a[x]!=b[x]):
+                return False
+    else:
+        return False
+    return True
+lista=[3,4,2,5]
+lista1=[3,2,2,1]
+print(equals(lista, lista1))
